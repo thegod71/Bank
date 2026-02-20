@@ -25,6 +25,8 @@ const userSchema = new mongoose.Schema(
       select: false, // ess ka mtlb ya hai ki jaha hum user ka data reterive kr rha hai to by default password nhi aaya  ga
     },
     systemUser: {
+      // yaa kui ki  hm intially  tranction ka liya chahiya ya database se direct
+      // true ho jaa aa ga
       type: Boolean,
       default: false,
       immutable: true,
